@@ -34,10 +34,10 @@ function Home() {
         <div className=" bg-primary font-primary">
             <Sidebar sideBarOpen={sideBarOpen}
                      handleClose={handleClose}/>
-            <Logout />
+   
             <div className="flex flex-row  items-center">
                 <div className="ml-8 mt-8 mr-2">
-                    <button onClick={handleOpen}>
+                    <button onClick={handleOpen} className="flex">
                         <img
                             src={imgUser}
                             alt="user"

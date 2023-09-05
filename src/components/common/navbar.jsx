@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { BsClipboardData, BsBriefcase, BsTrophy } from 'react-icons/bs';
+import { BsTrophy } from 'react-icons/bs';
 import { GoHomeFill, GoBellFill } from 'react-icons/go';
 import { BiSolidUser } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
