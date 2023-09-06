@@ -37,13 +37,14 @@ function Home() {
    
             <div className="flex flex-row  items-center">
                 <div className="ml-8 mt-8 mr-2">
-                    <button onClick={handleOpen} className="flex">
+                 
                         <img
                             src={imgUser}
                             alt="user"
                             className="rounded-full"
+                            onClick={handleOpen}
                         />
-                    </button>
+                  
                 </div>
                 <div className="mt-8 mx-4">
                     <h1 className="text-third text-lg" >Hola,</h1>

@@ -2,10 +2,11 @@ import React from "react";
 import AuthContextProvider from '../context/authContex';
 import PrivateRoute from "./authRoutes/PrivateRoute";
 import PublicRoute from "./authRoutes/PublicRoute";
-import { PRIVATE } from "../config/router/paths";
+import { PRIVATE, CATEGORIES } from "../config/router/paths";
 
 import Login from '../components/homepages/login/login';
 import Home from "../components/homepages/home/home";
+import Categories from "../components/categories/categories";
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 const router = createBrowserRouter([
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element:<Login/>
+                element: <Login />
             }
         ]
 
@@ -26,8 +27,13 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element:<Home/>
+                element: <Home />
+            },
+            {
+                path: CATEGORIES,
+                element:<Categories/>
             }
+
         ]
 
     },
@@ -41,7 +47,7 @@ const router = createBrowserRouter([
 export const Routes = () => (
     <>
         <AuthContextProvider >
-        <RouterProvider router={router}/>
+            <RouterProvider router={router} />
         </AuthContextProvider>
     </>
 
